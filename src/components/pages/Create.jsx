@@ -29,7 +29,7 @@ const Create = () => {
     };
   };
   return (
-    <div>
+    <div className="container-create">
       {result === 'saved' && <h4>User created successfully</h4>}
       {result === 'error' && <h4>Error creating user</h4>}
       <form onSubmit={saveUser}>
@@ -41,7 +41,7 @@ const Create = () => {
             <input type='email' name='email' onChange={changed} />
             <label htmlFor='phone'>Phone</label>
             <input type='tel' name='phone' onChange={changed} />
-            <input type='submit' value='Create' />
+            <input className="create-button" type='submit' value='Create' />
           </form>
     </div>
   );

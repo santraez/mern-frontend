@@ -14,7 +14,7 @@ const Read = () => {
     setLoading(loading);
   };
   return (
-    <div>
+    <div className="container-read">
       {
         loading ? (
           <p>Loading...</p>

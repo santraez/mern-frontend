@@ -1,0 +1,33 @@
+@use '../base/variables' as v;
+
+.container-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    label {
+      font-size: 3rem;
+    }
+    input, .create-button {
+      width: 80%;
+      height: 40px;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    .create-button {
+      margin: 20px 0;
+      height: 50px;
+      background-color: v.$black;
+      color: v.$white;
+      font-size: 3rem;
+    }
+  }
+}

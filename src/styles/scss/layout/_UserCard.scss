@@ -1,0 +1,40 @@
+@use '../base/variables' as v;
+
+.container-card {
+  background-color: v.$black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+  img {
+    border-radius: 10px;
+  }
+  h3 {
+    margin: 10px 0;
+    color: v.$white;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    button {
+      width: 40%;
+      height: 30px;
+      font-size: 2rem;
+    }
+    a {
+      width: 40%;
+      height: 30px;
+      font-size: 2rem;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  h1 {
+    font-size: 7rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}

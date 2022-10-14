@@ -15,7 +15,7 @@ const UserCard = ({ users, setUsers }) => {
   return (
     users.map((user) => {
       return (
-        <article key={user._id}>
+        <article className="container-card" key={user._id}>
           {
             user.image ? (
               <Link to={`/user/${user._id}`}>
@@ -29,8 +29,10 @@ const UserCard = ({ users, setUsers }) => {
           <h3>{user.email}</h3>
           <h3>{user.phone}</h3>
           <h3>{user.date}</h3>
-          <Link to={`/update/${user._id}`}><button>Edit</button></Link>
-          <button onClick={() => handleDelete(user._id)}>Delete</button>
+          <div className="buttons">
+            <Link to={`/update/${user._id}`}><button>Edit</button></Link>
+            <button onClick={() => handleDelete(user._id)}>Delete</button>
+          </div>
         </article>
       );
     })

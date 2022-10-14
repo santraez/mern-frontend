@@ -20,7 +20,7 @@ const Search = () => {
 		};
   };
 	return (
-		<div>
+		<div className="container-search">
 			<form onSubmit={handleSearch}>
 				<input name="browser" type="text" placeholder="Search" />
 				<input type="submit" value="search" />
